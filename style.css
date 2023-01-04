@@ -5,14 +5,6 @@
 }
 
 body {
-    /*
-    background-image: url(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    */
-
-    /* background: color image repeat position/size */
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
@@ -25,6 +17,7 @@ body * {
 #container {
     width: 360px;
     margin: 56px auto 0px;
+    padding: 0 24px;
 }
 
 #profile {
@@ -66,4 +59,15 @@ ul li a {
 
     text-decoration: none;
     font-weight: 500;
+
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #FFFFFF;
+
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
